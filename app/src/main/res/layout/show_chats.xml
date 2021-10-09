@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/chat_bg"
+    android:layout_margin="5dp"
+    android:padding="2dp"
+    android:orientation="horizontal">
+    <de.hdodenhof.circleimageview.CircleImageView
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/profile_image"
+        android:layout_width="96dp"
+        android:layout_height="96dp"
+        android:src="@drawable/avatar"
+        app:civ_border_width="2dp"
+        android:layout_marginLeft="5dp"
+        android:padding="1dp"
+        app:civ_border_color="#FF000000"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:layout_marginLeft="3dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/UserName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:padding="5dp"
+            android:textColor="@color/black"
+            android:layout_marginBottom="20dp"
+            android:text="Name" />
+
+        <TextView
+            android:id="@+id/lastMsg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:padding="2dp"
+            android:layout_marginBottom="5dp"
+            android:text="Last Message" />
+    </LinearLayout>
+
+</LinearLayout>
